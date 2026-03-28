@@ -126,12 +126,8 @@
 
        /* Button */
        button {
-           background: white;
            padding: 10px 20px;
-           text-decoration: none;
-           border-radius: 5px;
-           border-color: #cc5500;
-           ;
+           border-radius: 10px;
        }
 
 
@@ -154,17 +150,61 @@
            text-align: center;
        }
 
+       /* LinkedIn Icon */
+       .about-socials {
+           position: fixed;
+           top: 20px;
+           left: 90px;
+           z-index: 1000;
+       }
+
+       .about-socials a {
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           width: 40px;
+           height: 40px;
+           border-radius: 20%;
+           background-color: #eaf3ff;
+           color: #0a66c2;
+           font-size: 35px;
+           text-decoration: none;
+           transition: all 0.3s;
+       }
+
+       .about-socials a:hover {
+           background-color: #cc5500;
+           color: white;
+           transform: scale(1.1);
+       }
 
 
        /* footer tag */
        footer {
            color: #022033;
-           padding: 5px 20px;
-           display: flex;
-           justify-content: space-between;
-           align-items: center;
+           padding: 20px;
+           text-align: center;
            border-top: 2px solid #cc5500;
        }
+
+
+      .footer-info{
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      } 
+
+      .footer-info a{
+        font-size: 22px;
+    transition: 0.3s ease;
+    text-decoration: none;
+      }
+
+      .footer-info a:hover{
+        color: #cc5500;
+      }
+      
 
 
        /* anchor tag */
@@ -282,7 +322,9 @@
        .service-container {
            column-count: 2;
            column-gap: 20px;
-           padding: 20px;
+           padding: 15px;
+           background-color: #e1e1e1;
+           border-radius: 15px;
        }
 
        .service-card {
@@ -292,24 +334,33 @@
            overflow: hidden;
            transition: 0.3s;
            display: block;
-           width: 100%;
+           width: 400px;
            margin-bottom: 20px;
            text-decoration: none;
            color: inherit;
        }
 
+       .service-content {
+           padding: 15px;
+       }
+
+       .service-content p {
+           font-size: 14px;
+       }
+
+       .service-content h3 {
+           font-size: 18px;
+           margin: 15px;
+       }
 
        .service-card img {
            width: 100%;
-           height: 400px;
+           height: 200px;
            object-fit: cover;
            border-radius: 10px;
            margin-bottom: 10px;
        }
 
-       .service-card h3 {
-           margin: 15px;
-       }
 
        .service-card p {
            color: #555;
@@ -361,7 +412,34 @@
        }
 
 
+       .impact{
+        padding:60px 20px; 
+        text-align:center; 
+        background:#e1cdcd;
+       }
 
+       .impact h2{
+        font-family:'Segoe UI', sans-serif;
+         margin-bottom:40px; 
+         font-size:32px;
+       }
+
+       .impact-wrapper{
+        display:flex; 
+        flex-wrap:wrap; 
+        justify-content:center; 
+        gap:40px;
+       }
+
+       .impact-info{
+        max-width:220px; 
+        text-align:center;
+       }
+
+       .impact-info h3{
+        font-size:20px; 
+        margin-bottom:10px;
+       }
        /* Blog spot */
 
        .blog-container {
