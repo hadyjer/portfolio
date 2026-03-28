@@ -11,6 +11,7 @@
        body {
            height: 100%;
            margin: 0;
+           padding: 0;
        }
 
        /* Border */
@@ -32,6 +33,7 @@
        .hero-image {
            flex: 1;
            position: relative;
+
        }
 
        /* Hero image */
@@ -39,6 +41,7 @@
            width: 100%;
            height: 100%;
            object-fit: cover;
+           object-position: top center;
        }
 
        .hero-image::after {
@@ -265,12 +268,104 @@
        }
 
 
+       /* Services */
+       .services-hero {
+           height: calc(100vh - 20vh);
+           width: calc(100% - 20px);
+           background: url(images/service2.jpg) no-repeat center/cover;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           position: relative;
+       }
+
+       .service-container {
+           column-count: 2;
+           column-gap: 20px;
+           padding: 20px;
+       }
+
+       .service-card {
+           background: #fff;
+           border-radius: 20px;
+           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+           overflow: hidden;
+           transition: 0.3s;
+           display: block;
+           width: 100%;
+           margin-bottom: 20px;
+           text-decoration: none;
+           color: inherit;
+       }
+
+
+       .service-card img {
+           width: 100%;
+           height: 400px;
+           object-fit: cover;
+           border-radius: 10px;
+           margin-bottom: 10px;
+       }
+
+       .service-card h3 {
+           margin: 15px;
+       }
+
+       .service-card p {
+           color: #555;
+           padding: 0 15px 20px;
+       }
+
+       .service-card:hover {
+           transform: translateY(-5px);
+           border-bottom: 4px solid #cc5500;
+       }
+
+
+       /* dark overlay for readability */
+       .hero-overlay {
+           background: rgba(0, 0, 0, 0.5);
+           color: white;
+           text-align: center;
+           padding: 40px;
+           border-radius: 10px;
+       }
+
+       /* Heading */
+       .hero-overlay h1 {
+           font-size: 2.8rem;
+           margin-bottom: 15px;
+       }
+
+       /* Subtext */
+       .hero-overlay p {
+           font-size: 1.2rem;
+           margin-bottom: 20px;
+           color: #e0e0e0;
+       }
+
+       /* Button */
+       .hero-btn {
+           display: inline-block;
+           padding: 12px 25px;
+           background: #cc5500;
+           color: white;
+           text-decoration: none;
+           border-radius: 25px;
+           font-weight: bold;
+           transition: 0.3s;
+       }
+
+       .hero-btn:hover {
+           background: #ff8c42;
+       }
+
 
 
        /* Blog spot */
 
        .blog-container {
-           column-count: 3;
+           column-count: 2;
            column-gap: 20px;
            padding: 20px;
        }
