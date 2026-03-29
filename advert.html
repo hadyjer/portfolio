@@ -41,26 +41,29 @@
                     <b>Put in your advert here</b>
                 </p>
                 <!-- Form contains customer details and inquiries -->
-                <form>
+                <form action="https://formspree.io/f/xreopqpl" method="POST">
 
                     <label>Name:</label><br>
-                    <input type="text" placeholder="Enter your name"><br><br>
+                    <input type="text" name="name" placeholder="Enter your name" required><br><br>
 
                     <label>Email:</label><br>
-                    <input type="text" placeholder="Enter your email"><br><br>
+                    <input type="email" name="email" placeholder="Enter your email" required><br><br>
 
                     <label>Phone Number:</label><br>
-                    <input type="text" placeholder="Enter your phone number"><br><br>
+                    <input type="tel" name="phone" placeholder="Enter your phone number"><br><br>
 
                     <label>Message:</label><br>
-                    <textarea placeholder="Your Message"></textarea><br><br>
+                    <textarea name="message" placeholder="Your Message" required></textarea><br><br>
 
                     <button type="submit" style="color: rgb(128, 100, 66);">Submit</button>
+
+                    <input type="hidden" name="_redirect" value="thankyou.html">
+
                 </form>
             </div>
         </section>
 
-         <footer>
+        <footer>
 
             <div class="footer-info">
                 <a href="aboutme.html">About</a>
