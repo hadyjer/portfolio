@@ -17,6 +17,7 @@
        /* Border */
        .page-wrapper {
            min-height: 100vh;
+           min-height: 100dvh;
            border: 2px solid #cc5500;
            box-sizing: border-box;
            display: flex;
@@ -26,7 +27,7 @@
        /* Hero section */
        .hero {
            display: flex;
-           height: 100vh;
+           min-height: 100vh;
        }
 
        /* Left Side */
@@ -193,6 +194,7 @@
         display: flex;
         justify-content: center;
         gap: 20px;
+        flex-wrap: wrap;
       } 
 
       .footer-info a{
@@ -209,9 +211,6 @@
 
        /* anchor tag */
        a {
-           margin: 15px;
-           font-weight: bold;
-           display: flex;
            color: #022033;
            text-decoration: none;
            margin: 15px;
@@ -334,7 +333,7 @@
            overflow: hidden;
            transition: 0.3s;
            display: block;
-           width: 400px;
+           width: 100%;
            margin-bottom: 20px;
            text-decoration: none;
            color: inherit;
@@ -521,7 +520,8 @@
 
        /* forms */
        form {
-           width: 600px;
+           width: 100%;
+           max-width: 600px;
            display: flex;
            flex-direction: column;
        }
@@ -585,7 +585,15 @@
            }
 
            .blog-container {
-               column-count: 2;
+               column-count: 1;
+           }
+
+           footer{
+            padding: 15px 10px;
+           }
+
+           .footer-info{
+            gap: 12px;
            }
        }
 
