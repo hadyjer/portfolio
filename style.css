@@ -148,7 +148,7 @@
        }
 
        .about {
-           text-align: center;
+           text-align: left;
        }
 
        /* LinkedIn Icon */
@@ -432,7 +432,7 @@
 
        .impact-info{
         max-width:220px; 
-        text-align:center;
+        text-align:left;
        }
 
        .impact-info h3{
